@@ -7,7 +7,6 @@ namespace Church.API.Models
     {
         public Account()
         {
-            Contribution = new HashSet<Contribution>();
         }
 
         public int AccountId { get; set; }
@@ -19,7 +18,5 @@ namespace Church.API.Models
         public sbyte? Status { get; set; }
         public DateTime? DateAdded { get; set; }
         public DateTime? DateChanged { get; set; }
-
-        public virtual ICollection<Contribution> Contribution { get; set; }
     }
 }

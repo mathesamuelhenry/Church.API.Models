@@ -7,7 +7,7 @@ namespace Church.API.Models
     {
         public TableColumn()
         {
-            ColumnValueDesc = new HashSet<ColumnValueDesc>();
+            // ColumnValueDesc = new HashSet<ColumnValueDesc>();
         }
 
         public int TableColumnId { get; set; }
@@ -17,6 +17,6 @@ namespace Church.API.Models
         public DateTime? DateAdded { get; set; }
         public DateTime? DateChanged { get; set; }
 
-        public virtual ICollection<ColumnValueDesc> ColumnValueDesc { get; set; }
+        // public virtual ICollection<ColumnValueDesc> ColumnValueDesc { get; set; }
     }
 }
