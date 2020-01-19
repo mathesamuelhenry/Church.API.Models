@@ -4,14 +4,14 @@ using System.Text;
 
 namespace Church.API.Models.AppModel.Request.User
 {
-    public class Register
+    public class RegisterRequest
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
 
-        private string _status = "A";
+        private string _status = "P";
         public string Status
         {
             get { return _status; }

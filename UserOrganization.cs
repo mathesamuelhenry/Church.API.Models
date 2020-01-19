@@ -13,7 +13,7 @@ namespace Church.API.Models
         public string UserChanged { get; set; }
         public DateTime? DateChanged { get; set; }
 
-        //public virtual Organization Organization { get; set; }
+        public virtual Organization Organization { get; set; }
         //public virtual Users User { get; set; }
     }
 }
