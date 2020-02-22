@@ -7,7 +7,7 @@ namespace Church.API.Models
     {
         public Users()
         {
-            UserOrganization = new HashSet<UserOrganization>();
+            // UserOrganization = new HashSet<UserOrganization>();
             UserRole = new HashSet<UserRole>();
             UserSecurityQuestion = new HashSet<UserSecurityQuestion>();
         }
@@ -23,7 +23,7 @@ namespace Church.API.Models
         public string UserChanged { get; set; }
         public DateTime? DateChanged { get; set; }
 
-        public virtual ICollection<UserOrganization> UserOrganization { get; set; }
+        //public virtual ICollection<UserOrganization> UserOrganization { get; set; }
         public virtual ICollection<UserRole> UserRole { get; set; }
         public virtual ICollection<UserSecurityQuestion> UserSecurityQuestion { get; set; }
     }

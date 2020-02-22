@@ -6,6 +6,7 @@ namespace Church.API.Models.AppModel.Request.User
 {
     public class RegisterRequest
     {
+        public string AuthGroupName { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }

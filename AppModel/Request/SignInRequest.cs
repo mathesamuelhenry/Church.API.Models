@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Church.API.Models.AppModel.Request
 {
-    public class SignIn
+    public class SignInRequest
     {
         [Required]
         public string Email { get; set; }
