@@ -7,13 +7,13 @@ namespace Church.API.Models
     {
         public Organization()
         {
-            //OrganizationCategory = new HashSet<OrganizationCategory>();
-            //UserOrganization = new HashSet<UserOrganization>();
+            OrganizationCategory = new HashSet<OrganizationCategory>();
+            UserOrganization = new HashSet<UserOrganization>();
         }
 
         public int OrganizationId { get; set; }
         public string Name { get; set; }
-        public string Industry { get; set; }
+        public int? IndustryId { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
         public string UserAdded { get; set; }
@@ -21,7 +21,8 @@ namespace Church.API.Models
         public string UserChanged { get; set; }
         public DateTime? DateChanged { get; set; }
 
-        //public virtual ICollection<OrganizationCategory> OrganizationCategory { get; set; }
-        //public virtual ICollection<UserOrganization> UserOrganization { get; set; }
+        public virtual Industry Industry { get; set; }
+        public virtual ICollection<OrganizationCategory> OrganizationCategory { get; set; }
+        public virtual ICollection<UserOrganization> UserOrganization { get; set; }
     }
 }

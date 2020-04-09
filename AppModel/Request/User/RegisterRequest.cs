@@ -24,10 +24,10 @@ namespace Church.API.Models.AppModel.Request.User
         public List<int> OrganizationIdList { get; set; }
         public List<int> UserRoleIdList { get; set; }
 
-        public List<UserQuestionAnswer> UserQuestionAnswerList { get; set; }
+        public List<UserQuestionAnswerModel> UserQuestionAnswerList { get; set; }
     }
 
-    public class UserQuestionAnswer
+    public class UserQuestionAnswerModel
     {
         public int UserSecurityQuestionId { get; set; }
         public string Answer { get; set; }
