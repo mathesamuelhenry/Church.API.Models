@@ -10,11 +10,14 @@ namespace Church.API.Models
         }
 
         public int ContributorId { get; set; }
+        public int OrganizationId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string FamilyName { get; set; }
         public sbyte? Status { get; set; }
         public DateTime? DateAdded { get; set; }
         public DateTime? DateChanged { get; set; }
+
+        public virtual Organization Organization { get; set; }
     }
 }
